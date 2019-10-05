@@ -1,11 +1,11 @@
 # Настройка репозитория
 Чтобы гарантированно запускать примеры из семинаров с теми же
 версиями библиотек, а также запускать задачи из домашнего задания необходимо создать
-вирутальное окружение с `python3.7`. 
+вирутальное окружение с `python3.6`. 
 
 ## Пример настройки с использованием [`virtualenv`](https://virtualenv.pypa.io/en/stable/userguide/)
 
-1. Создайте виртуальное окружение `virtualenv -p python3.7 <path_to_dir_where_env_will_be_stored>`
+1. Создайте виртуальное окружение `virtualenv -p python3.6 <path_to_dir_where_env_will_be_stored>`
 2. Активируйте  `source <path_to_the_dir/bin/activate>` (для windows: `<path_to_the_dir\Scripts\activate>`), для выхода используйте команду `deactivate` 
 3. Установите необходимые пакеты `pip install -r <path_to_rep_requirements.txt>`
 Выполнив эту команду, вы получите такую же кофигурацию библиотек, которая используется на семинарах, лекциях и в домашних заданиях.
@@ -17,7 +17,7 @@
 1. Выполните команду `jupyter notebook --port 3040 --port-retries=0 --ip='*' --no-browser`. Теперь вы можете зайти в браузере на страницу [http://localhost:3040/tree](http://localhost:3040/tree) и увидеть проводник. Корневой папкой будет та, находясь в которой, вы выполнили команду запуска.
 2. Добавьте в `jupyter notebook` созданное ранее виртуальное окружение как новый `Kernel`.
 Находясь в виртуальном окружении выполните команду
-`ipython kernel install --user --name=<name_of_kernel>`.  
+`python -m IPython kernel install --user --name=<name_of_kernel>`.  
 Теперь вы можете переключиться на нужное ядро через `Kernel` > `Change kernel` прямо в открытом ноутбуке с кодом.
 
 ***
