@@ -41,7 +41,7 @@ Keras-Preprocessing==1.1.0
 kiwisolver==1.1.0
 lightgbm==2.3.0
 llvmlite==0.30.0
-lxml==4.4.1
+lxml==4.6.2
 Markdown==3.1.1
 matplotlib==3.1.1
 networkx==2.2
